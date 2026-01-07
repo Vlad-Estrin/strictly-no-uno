@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Please, No UNO</title>
+    <style>
+        :root {
+            --bg-color: #0f0f0f;
+            --text-color: #e0e0e0;
+            --accent-red: #ff4b4b;
+            --accent-yellow: #fecb00;
+            --card-bg: #1a1a1a;
+            --subtle-gray: #888;
+        }
+
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, sans-serif;
+            background-color: var(--bg-color);
+            color: var(--text-color);
+            margin: 0;
+            padding: 0;
+            line-height: 1.6;
+            display: flex;
+            justify-content: center;
+            min-height: 100vh;
+        }
+
+        .container {
+            max-width: 800px;
+            padding: 60px 20px;
+            text-align: center;
+        }
+
+        h1 {
+            font-size: 3.5rem;
+            font-weight: 800;
+            color: var(--accent-red);
+            text-transform: uppercase;
+            margin-bottom: 10px;
+            letter-spacing: -2px;
+            line-height: 1;
+        }
+
+        .subtitle {
+            font-size: 1.25rem;
+            color: var(--subtle-gray);
+            margin-bottom: 60px;
+            font-weight: 300;
+            max-width: 600px;
+            margin-left: auto;
+            margin-right: auto;
+        }
+
+        .grid {
+            display: grid;
+            grid-template-columns: 1fr;
+            gap: 25px;
+            text-align: left;
+        }
+
+        @media (min-width: 700px) {
+            .grid {
+                grid-template-columns: 1fr 1fr;
+            }
+        }
+
+        .card {
+            background-color: var(--card-bg);
+            padding: 30px;
+            border-radius: 16px;
+            border: 1px solid #333;
+            transition: all 0.3s ease;
+            position: relative;
+            overflow: hidden;
+        }
+
+        .card:hover {
+            transform: translateY(-5px);
+            border-color: var(--accent-yellow);
+            box-shadow: 0 10px 30px rgba(0,0,0,0.5);
+        }
+
+        .card h3 {
+            margin-top: 0;
+            color: var(--accent-yellow);
+            font-size: 1.4rem;
+            margin-bottom: 15px;
+            display: flex;
+            align-items: center;
+            gap: 10px;
+        }
+
+        .card p {
+            font-size: 1rem;
+            color: #ccc;
+            margin: 0;
+        }
+
+        .footer {
+            margin-top: 80px;
+            padding-top: 40px;
+            border-top: 1px solid #333;
+        }
+
+        .alt-games {
+            color: var(--accent-red);
+            font-weight: bold;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="container">
+        <h1>⛔ Strictly<br>No UNO</h1>
+        <p class="subtitle">I value our friendship too much to subject it to this RNG nightmare. Here is a scientific breakdown of why I refuse to play.</p>
+
+        <div class="grid">
+            <div class="card">
+                <h3>📉 Zero Agency</h3>
+                <p>In game design, "Agency" is the ability to make meaningful choices. In UNO, I have none. I either match the color/number or I draw. I am not a player; I am merely a biological machine sorting cardboard.</p>
+            </div>
+            <div class="card">
+                <h3>🐒 The Chimp Factor</h3>
+                <p>If you taught a chimpanzee to recognize colors, it would have the same statistical win rate as a grandmaster strategist. There is no skill curve here, only raw, unadulterated chaos.</p>
+            </div>
+            <div class="card">
+                <h3>♾️ Infinite Loop Hell</h3>
+                <p>A well-designed game progresses toward a climax. UNO's "+4" and "Skip" mechanics destroy progress. Theoretically, a single game can last forever. That is not fun; that is Purgatory.</p>
+            </div>
+            <div class="card">
+                <h3>🧠 Cognitive Decay</h3>
+                <p>According to Flow Theory, boredom occurs when a task has zero challenge. UNO requires less brainpower than breathing. It is not "relaxing"—it is a waste of synaptic activity.</p>
+            </div>
+        </div>
+
+        <div class="footer">
+            <h3>🤝 My Counter-Offer</h3>
+            <p>Let's play something where decisions actually matter.</p>
+            <p class="alt-games">Exploding Kittens • Codenames • Poker • Literally anything else</p>
+        </div>
+    </div>
+
+</body>
+</html>
